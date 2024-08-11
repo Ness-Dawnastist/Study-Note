@@ -1,0 +1,17 @@
+Python标准库中的模块unittest提供了代码测试工具
+单元测试用于核实函数的某个方面没有问题
+测试用例是一组单元测试，用于模拟各个情形
+全覆盖式测试用例包含了一整套单元测试
+
+利用测试，就不需要在每次修改代码时都手动运行很多次程序检验程序能否应对不同的输入
+
+常用的断言方法：
+assertEqual(a, b)
+assertNotEqual(a, b)
+assertTrue(x)
+assertFalse(x)
+assertIn(item, list)
+assertNotIn(item, list)
+
+运行测试用例时，每完成一个单元测试，Python都打印一个字符：
+测试通过时打印一个句点；测试引发错误时打印一个E；测试导致断言失败时打印一个F
