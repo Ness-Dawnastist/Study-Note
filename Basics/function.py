@@ -109,3 +109,12 @@ def exam(name, age, **scores): #多出来的参数作为一个字典传入
     print(scores)
 
 exam('zhangsan', 18, Math=100, English=90)
+
+# 注意变量的作用域，如果要在函数中声明全局变量，应使用global关键字
+def add(a, b):
+    global c
+    c = a + b
+    return c
+
+print(add(1, 2))
+print(c)

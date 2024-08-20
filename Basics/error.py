@@ -24,3 +24,23 @@ try:
     print(1/0)
 except ZeroDivisionError:
     pass
+
+# raise关键字可以手动抛出一个异常
+try:
+    gender= input("请输入性别：")
+    if gender != "男" and gender != "女":
+        raise ValueError("性别输入错误") # 当字符串不为'男'或'女'时，手动抛出一个异常，这个异常应被下面的ValueError捕获
+except ValueError as v:
+    print(v)
+
+# 常见异常类型
+# ZeroDivisionError: 除以零
+# IndexError: 索引超出范围
+# KeyError: 键不存在
+# NameError: 变量未定义
+# TypeError: 类型不匹配
+# ValueError: 值无效
+# SyntaxError: 语法错误
+# AttributeError: 属性或方法不存在
+# TypeError: 类型不匹配
+# IndentationError: 缩进错误
